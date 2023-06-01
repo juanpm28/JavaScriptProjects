@@ -1,0 +1,93 @@
+body {
+  background-color: rgb(165, 165, 165);
+}
+
+#calculator-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(85, 85, 85);
+  width: fit-content;
+  border-radius: 10px;
+}
+
+#pantalla {
+  height: 100px;
+  width: 400px;
+  background-color: rgb(255, 255, 255, 80%);
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+  color: black;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons-container {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+button {
+  background-color: rgb(221, 221, 138);
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* To move last button to the center */
+button:last-child {
+  grid-row: 4 / 4;
+  grid-column: 2 / 3;
+}
+
+/* when clicking */
+button:active {
+  background-color: rgb(185, 185, 116);
+}
+
+#numbers-container {
+  background-color: rgb(241, 255, 207);
+  width: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* the same as 1fr 1fr 1fr */
+  gap: 10px;
+  padding: 10px;
+  border-radius: 0 0 0 10px;
+}
+
+#operation-sign-container {
+  background-color: rgb(191, 197, 136);
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 0 0 10px 0;
+}
+
+button#erase {
+  background-color: rgb(219, 219, 95);
+}
+
+input#result {
+  background-color: rgb(219, 219, 95);
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+}
